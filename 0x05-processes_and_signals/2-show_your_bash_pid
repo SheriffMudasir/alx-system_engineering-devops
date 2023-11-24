@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# shellcheck disable=SC2009
+# This script displays lines containing the bash word in the process tree
+ps aux --forest | grep '[b]ash'
