@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # This script loops from 1 to 10 and displays "bad luck" at 4th, "good luck" at 8th, and "Best School" for the other iterations
-
-for ((i=0; i<10; i++)); do
+i=0
+while [ $i -ne 10 ]; do
     if [ $i -eq 3 ]; then
         echo "bad luck"
     elif [ $i -eq 7 ]; then
@@ -9,4 +9,5 @@ for ((i=0; i<10; i++)); do
     else
         echo "Best School"
     fi
+    ((i++))
 done
