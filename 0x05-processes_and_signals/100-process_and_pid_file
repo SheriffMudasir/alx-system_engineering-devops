@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# This bash script creates the file /var/run/myscript.pid containing its PID, displays some text, and then deletes the file
+echo $$ > /var/run/myscript.pid
+
+signals_function() {
+    case $1 in
+        SIGTERM)
+            echo "I hate the kill command"
+            ;;
+        SIGINT)
+            echo "Y U no love me?!"
+            ;;
+        SIGQUIT | SIGTERM)
+            rm /var/run/myscript.pid
+            exit
+            ;;
+    esac
+}
+
+trap 'signals_function SIGTERM' SIGTERM
+trap 'signals_function SIGINT' SIGINT
+trap 'signals_function SIGQUIT' SIGQUIT
+
+while true; do
+    echo "To infinity and beyond"
+    sleep 1
+done
