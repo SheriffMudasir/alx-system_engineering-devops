@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#This script that pings an IP address passed as an argument.
+if [ "$#" -eq 0 ]; then
+	exit 1
+fi
+
+
+IP_address="$1"
+ping -c 5 "$IP_address"
