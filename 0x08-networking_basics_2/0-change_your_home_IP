@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 #This script  Back up the original hosts file and resolve addresses
 sudo cp /etc/hosts /etc/hosts.backup
 
