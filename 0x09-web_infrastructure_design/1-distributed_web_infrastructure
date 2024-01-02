@@ -1,1 +1,23 @@
 https://1drv.ms/i/s!AqAUj4Lae6gpg23s2ZGziHpkn7kJ?e=0qjTJS
+
+### What distribution algorithm your load balancer is configured with and how it works
+The load balancer distribute traffic among multiple according to the specified weight (Weighted Scheduling)
+
+### Is your load-balancer enabling an Active-Active or Active-Passive setup, explain the difference between both
+Active-Active setup all servers actively handles traffice suimultaneously distributing load evenly across servers 
+
+Active - Passive One server actively handles traffic while the other is kept at standby for backup in the event of a flaw
+
+### How a database Primary-Replica (Master-Slave) cluster works
+Ensure constanct data availability and redundancy by replicating databased from master to slave database
+
+### What is the difference between the Primary node and the Replica node in regard to the application
+Primary node accept write operation and source of truth for the database
+
+Replica node accept read operation and replicate data from primary node to ensure data redundancy
+
+## Infrastructure Problem
+SPOF (Single Point of Failure) No fallout mechanism, load balancer may be single point of failure
+
+No firewall exposes the server to unauthorized access
+HTTP is an insecure protocol therefore HTTPS should be use to encrypt data transmission from server to client and vice versa

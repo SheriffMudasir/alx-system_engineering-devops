@@ -1,0 +1,12 @@
+https://1drv.ms/i/s!AqAUj4Lae6gpg3DjyTLs2kfrixDL?e=CzWqL5
+### Load Balancer Cluster (HAProxy)
+Enhances redundancy and ensure scalability by distributing load across multiple server 
+
+### Web Server (Nginx)
+Handles HTTPS request serves static content and distributes web traffic to improve performance and prevent downtime in the event that a web server  fails
+
+### Application Server 
+Executes server sde codes and serve dynamic content for effective load distribution
+
+### Database Server (MySQL Primary - Replica)
+Stores and retrieves data from web application by providing data redundancy and high availability
