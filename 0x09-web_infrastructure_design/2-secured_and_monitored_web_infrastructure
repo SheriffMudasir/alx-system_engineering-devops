@@ -1,0 +1,22 @@
+https://1drv.ms/i/s!AqAUj4Lae6gpg24rfokTNeGJm7bI?e=LbV0U4
+
+### What are firewalls for?
+Firewall secures the server by monitoring incoming and out going traffic. Each server should have an it own firewall
+
+### Why is the traffic served over HTTPS
+HTTPS is a secure protocol which allows data to exchanged more securely between the server and the client and vice versa
+
+### What monitoring is used for?
+Monitoring server consistently to quickly identify threat to it operation  and proactively engabge the threat
+
+### How the monitoring tool is collecting data?
+Monitoring tool such as sumologic or others collects data on server performance and records it
+
+### Explain what to do if you want to monitor your web server QPS
+Monitoring tool monitors the numbers of queries per seconds on the web server 
+
+Terminating SSL at the load balancer exposes the decrypted data. Traffic should be encrypted end-to-end
+
+Single MySQL server handling write operation is a single point of failure (SPOF). Write operation should be load balanced across multiple databases
+
+Uniformity in server component should be avoided as this may lead to vulnerability of the entire system

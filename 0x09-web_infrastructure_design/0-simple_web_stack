@@ -1,0 +1,31 @@
+https://1drv.ms/i/s!AqAUj4Lae6gpg2yOsxQF-ojS-5k6?e=4IfuJC
+
+### What is a server? 
+A server is a physical or virtualize computer hosting the entire web infrastructure
+### What is the role of the domain name?
+Domain name System (foobar.com)  maps the text based address to a numerical based address understood by the computer
+### What type of DNS record www is in www.foobar.com?
+CNAME Canonical  name
+### What is the role of the web server?
+Web server (Nginx) Listens for HTTP request and serve static content like HTML and images and route request to the application server for dynamic content
+
+### What is the role of the application server? 
+Application server executes server side code and serve dynamic content 
+
+### What is the role of the database
+Database stores and retrieves data from the web application using structured quary language(SQL)
+
+### What is the server using to communicate with the computer of the user requesting the website ?
+The server uses HTTP protocol to communicate with the user to handle request and serve web content
+
+## Infrasstructure Problem
+
+### Single Point of  Failure
+The entire infrastructure relies on one server which will result it downtime in the event of failure
+
+### Downtime during code deployment or maintenance
+Risk of downtime as the server may need to be restarted during code deployment
+
+### Limited Capacity
+The system may break down if it encounter unsual high traffic with no mean of scaling rapidly
+
