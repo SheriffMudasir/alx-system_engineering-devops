@@ -23,11 +23,11 @@ Copy code
 
 Add this public key to the `ubuntu` user on your server to enable secure connections without a password.
 
-### Task 3: README File
+### Task 3: ``
 
-- **File:** `README.md`
-
-Read the README for an overview of the project and instructions for each task. It provides essential information and guidance on replicating the configuration.
+### Task 4: Client configuration file (w/ Puppet)
+- **File:** `100-puppet_ssh_config.pp`
+    Use puppet
 
 ## Getting Started
 
